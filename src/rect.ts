@@ -1,10 +1,5 @@
-export interface IPoint {
-  x: number;
-  y: number;
-}
-export class Point implements IPoint {
-  constructor(public x: number, public y: number) {}
-}
+import { IPoint, Point } from './point';
+
 export interface IRect {
   center: IPoint;
   width: number;

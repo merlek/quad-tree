@@ -40,11 +40,13 @@
    },
    "devDependencies": {
       "@types/jasmine": "^3.5.1",
+      "canvas-tools": "merlek/canvas-tools#fdae484",
       "karma": "^4.4.1",
       "karma-chrome-launcher": "^3.1.0",
       "karma-jasmine": "^3.1.0",
       "karma-spec-reporter": "0.0.32",
       "karma-webpack": "^4.0.2",
+      "matrix": "merlek/matrix#70ddcb0",
       "pre-commit": "^1.2.2",
       "prettier": "^1.19.1",
       "ts-loader": "^6.2.1",
@@ -52,13 +54,11 @@
       "tslint": "^5.20.1",
       "tslint-config-prettier": "^1.18.0",
       "typescript": "^3.7.5",
+      "utility-functions": "merlek/utility-functions#e7a909b",
+      "vector": "merlek/vector#72f197c",
       "webpack": "^4.41.5",
       "webpack-cli": "^3.3.10",
-      "webpack-dev-server": "^3.10.1",
-      "canvas-tools": "merlek/canvas-tools#fdae484",
-      "matrix": "merlek/matrix#70ddcb0",
-      "vector": "merlek/vector#72f197c",
-      "utility-functions": "merlek/utility-functions#e7a909b"
+      "webpack-dev-server": "^3.10.1"
    },
    "files": [
       "dist/**/*"

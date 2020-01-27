@@ -1,17 +1,22 @@
 import { Circle, Animators, Mouse } from 'canvas-tools';
 import { randomInt } from 'utility-functions';
-import { Point, Rect } from '../src/data-structures';
+import { Rect } from '../src/rect';
 import { QuadTree } from '../src/quad-tree';
+import { Point } from '../src/point';
 
- const width = 400;
- const height = 400;
- const querySize = 100;
+const width = 400;
+const height = 400;
+const querySize = 100;
 
 export class QuadTreeApp extends Animators.CanvasAnimator {
   private qtree = new QuadTree(
     new Rect(new Point(width / 2, height / 2), width, height)
   );
-  private queryRange = new Rect(new Point(width / 2, height / 2), querySize, querySize);
+  private queryRange = new Rect(
+    new Point(width / 2, height / 2),
+    querySize,
+    querySize
+  );
   constructor(containerId: string) {
     super(Animators.createCanvasElement(containerId, width, height));
   }

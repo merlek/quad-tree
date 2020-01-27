@@ -1,6 +1,7 @@
-import { Point, Rect } from '../src/data-structures';
-import { QuadTree } from '../src/quad-tree';
 import { randomInt } from 'utility-functions';
+import { QuadTree } from '../src/quad-tree';
+import { Rect } from '../src/rect';
+import { Point } from '../src/point';
 
 // const precision = 9;
 

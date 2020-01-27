@@ -1,4 +1,5 @@
-import { Rect, Point, IPoint, IRect } from './data-structures';
+import { IPoint, Point } from './point';
+import { IRect, Rect } from './rect';
 
 export class QuadTree {
   static capacity = 4;
