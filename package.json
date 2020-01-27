@@ -1,7 +1,7 @@
 {
    "name": "quad-tree",
    "version": "1.0.0",
-   "description": "Canvas API function library",
+   "description": "A quad-tree implementation in typescript",
    "main": "dist/quad-tree.js",
    "types": "dist/quad-tree.d.ts",
    "scripts": {
@@ -46,7 +46,6 @@
       "karma-jasmine": "^3.1.0",
       "karma-spec-reporter": "0.0.32",
       "karma-webpack": "^4.0.2",
-      "matrix": "merlek/matrix#70ddcb0",
       "pre-commit": "^1.2.2",
       "prettier": "^1.19.1",
       "ts-loader": "^6.2.1",
@@ -55,7 +54,6 @@
       "tslint-config-prettier": "^1.18.0",
       "typescript": "^3.7.5",
       "utility-functions": "merlek/utility-functions#e7a909b",
-      "vector": "merlek/vector#72f197c",
       "webpack": "^4.41.5",
       "webpack-cli": "^3.3.10",
       "webpack-dev-server": "^3.10.1"
