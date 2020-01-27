@@ -8,5 +8,6 @@ export declare class QuadTree {
     insert(point: Point): boolean;
     get divided(): boolean;
     private subdivide;
+    query(range: Rect, found?: Point[]): Point[];
 }
 //# sourceMappingURL=quad-tree.d.ts.map

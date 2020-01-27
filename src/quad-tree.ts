@@ -46,4 +46,17 @@ export class QuadTree {
       new QuadTree(new Rect(new Point(x - w / 2, y + h / 2), w, h))
     );
   }
+  public query(range: Rect, found: Point[] = []): Point[] {
+    if (this.bound.intersects(range)) {
+      found.push(...this.points.filter(range.contains));
+
+      if (this.divided) {
+        this.children.forEach(child => {
+          found.push(...child.query(range));
+        });
+      }
+    }
+
+    return found;
+  }
 }

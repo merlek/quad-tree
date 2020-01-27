@@ -12,4 +12,11 @@ export class Rect {
     pos.x <= this.center.x + this.width / 2 &&
     pos.y >= this.center.y - this.height / 2 &&
     pos.y <= this.center.y + this.height / 2;
+  public intersects = (range: Rect) =>
+    !(
+      range.center.x - range.width / 2 > this.center.x + this.width / 2 ||
+      range.center.x + range.width / 2 < this.center.x - this.width / 2 ||
+      range.center.y - range.height / 2 > this.center.y + this.height / 2 ||
+      range.center.y + range.height / 2 < this.center.y - this.height / 2
+    );
 }

@@ -1,15 +1,12 @@
-export declare const width = 400;
-export declare const height = 400;
-export declare class QuadTreeApp {
-    private canvas;
+import { Animators } from 'canvas-tools';
+import { QuadTree } from '../src/quad-tree';
+export declare class QuadTreeApp extends Animators.CanvasAnimator {
     private qtree;
-    private ctx;
-    private animationFrameId?;
-    constructor(containerId: string, canvas: HTMLCanvasElement);
-    private setupQuadTree;
-    private update;
+    private queryRange;
+    constructor(containerId: string);
+    setup(): QuadTree;
+    draw(qt?: QuadTree, ctx?: CanvasRenderingContext2D): void;
     private drawQuadTree;
-    private draw;
-    destroy(): void;
+    private strokeRect;
 }
 //# sourceMappingURL=quad-tree-app.d.ts.map

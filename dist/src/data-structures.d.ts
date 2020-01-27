@@ -9,5 +9,6 @@ export declare class Rect {
     height: number;
     constructor(center: Point, width: number, height: number);
     contains: (pos: Point) => boolean;
+    intersects: (range: Rect) => boolean;
 }
 //# sourceMappingURL=data-structures.d.ts.map
