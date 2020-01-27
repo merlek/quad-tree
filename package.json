@@ -36,11 +36,7 @@
    "author": "merlek",
    "license": "MIT",
    "dependencies": {
-      "@types/node": "^13.1.6",
-      "canvas-tools": "file:../canvas-tools",
-      "matrix": "merlek/matrix#9cfb728",
-      "vector": "merlek/vector#72f197c",
-      "utility-functions": "merlek/utility-functions#e7a909b"
+      "@types/node": "^13.1.6"
    },
    "devDependencies": {
       "@types/jasmine": "^3.5.1",
@@ -58,7 +54,11 @@
       "typescript": "^3.7.5",
       "webpack": "^4.41.5",
       "webpack-cli": "^3.3.10",
-      "webpack-dev-server": "^3.10.1"
+      "webpack-dev-server": "^3.10.1",
+      "canvas-tools": "merlek/canvas-tools#fdae484",
+      "matrix": "merlek/matrix#70ddcb0",
+      "vector": "merlek/vector#72f197c",
+      "utility-functions": "merlek/utility-functions#e7a909b"
    },
    "files": [
       "dist/**/*"
