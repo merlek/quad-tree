@@ -1,11 +1,14 @@
-import { Rect, Point } from './data-structures';
+import { Rect, Point, IPoint, IRect } from './data-structures';
 
 export class QuadTree {
   static capacity = 4;
-  public points: Point[] = [];
-  public children: QuadTree[] = [];
-  constructor(public bound: Rect) {}
-  public insert(point: Point): boolean {
+  public readonly points: IPoint[] = [];
+  public readonly children: QuadTree[] = [];
+  public readonly bound: Readonly<Rect>;
+  constructor({ center, width, height }: IRect) {
+    this.bound = new Rect(center, width, height);
+  }
+  public insert(point: IPoint): boolean {
     if (!this.bound.contains(point)) {
       return false;
     }
@@ -46,9 +49,9 @@ export class QuadTree {
       new QuadTree(new Rect(new Point(x - w / 2, y + h / 2), w, h))
     );
   }
-  public query(range: Rect, found: Point[] = []): Point[] {
+  public query(range: IRect, found: IPoint[] = []): IPoint[] {
     if (this.bound.intersects(range)) {
-      found.push(...this.points.filter(range.contains));
+      found.push(...this.points.filter(Rect.contains(range)));
 
       if (this.divided) {
         this.children.forEach(child => {

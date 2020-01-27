@@ -9,6 +9,7 @@ describe('quad-tree', () => {
   const qtree = new QuadTree(
     new Rect(new Point(size / 2, size / 2), size, size)
   );
+
   afterAll(function() {});
 
   it('quad-tree can insert and query', () => {
