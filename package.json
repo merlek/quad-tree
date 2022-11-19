@@ -55,7 +55,7 @@
       "typescript": "^3.7.5",
       "utility-functions": "merlek/utility-functions#e7a909b",
       "webpack": "^4.41.5",
-      "webpack-cli": "^3.3.10",
+      "webpack-cli": "^3.3.12",
       "webpack-dev-server": "^3.10.1"
    },
    "files": [
